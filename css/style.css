@@ -415,8 +415,8 @@ main {
     margin: auto;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "mot1 mot1 mot2 mot2 mot3 mot3"
-        ". mot4 mot4 mot5 mot5 .";
+    grid-template-areas:"mot1 mot1 mot2 mot2 mot3 mot3"
+                        ". mot4 mot4 mot5 mot5 .";
     gap: 10px;
     padding: 30px;
 }
@@ -537,6 +537,22 @@ main {
     .texto{
         padding-top: 8px;
         font-size: 33px;
+    }
+
+    /* MOTIVOS */
+    .motivos {
+        height: auto;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:    "mot1"
+                                "mot2"
+                                "mot3"
+                                "mot4"
+                                "mot5";
+        gap: 10px;
+        padding: 30px;
     }
 
 }
