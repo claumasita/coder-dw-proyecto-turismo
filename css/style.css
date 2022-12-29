@@ -288,6 +288,28 @@ header {
     color: black;
 }
 
+/* BARRA DE NAV-BOOTSTRAP */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #fdf1d7;
+    z-index: 2;
+}
+
+.nav-item{
+    list-style: none;
+    font-family: var(--font-p);
+}
+
+.nav-link{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.active{
+    font-weight: bold;
+}
+
 /* HOME */
 h1,
 h2 {
@@ -307,7 +329,6 @@ h2{
 
 main {
     padding-top: 20px;
-    /* background-color: #fdf1d7; */
 }
 
 .galeria {
