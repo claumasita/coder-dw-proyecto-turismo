@@ -25,9 +25,8 @@ font-family: 'Unbounded', cursive;
 
 body {
     width: 100%;
-    max-width: 1920px;
+    max-width: 1300px;
     margin: 0 auto;
-    /* box-shadow: 0px 0px 50px gray; */
 }
 
 header {
@@ -59,8 +58,8 @@ header {
 }
 
 .sol {
-    left: 10px;
-    top: 10px;
+    left: 30px;
+    top: 20px;
     border-radius: 50%;
     width: 70px;
     height: 70px;
@@ -105,6 +104,7 @@ header {
     }
 }
 
+/* Texto en la arena */
 .texto{
     position: absolute;
     text-align: center;
@@ -198,8 +198,6 @@ header {
 }
 
 .arena-hume {
-    /* height: 37%; */
-    /* width: 175%; */
     height: 43%;
     width: 200%;
     left: -50%;
@@ -262,7 +260,7 @@ header {
 }
 
 .hoja-palmera-r img {
-    height: 350px;
+    height: 320px;
 }
 
 /* BARRA DE NAVEGACIÓN */
@@ -294,10 +292,10 @@ header {
 /* BARRA DE NAV-BOOTSTRAP */
 /***********************************************************/
 .navbar {
-    position: sticky;
-    top: 0;
+    /* position: sticky; */
+    /* top: 0; */
     background-color: #fdf1d7;
-    z-index: 2;
+    /* z-index: 2; */
 }
 
 .nav-item{
@@ -342,17 +340,19 @@ main {
     display: grid;
     margin: auto;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 250px 250px 250px;
-    grid-template-areas: "img1 img2 img2 img3"
-        "img1 img4 img5 img3"
-        "img6 img6 img7 img8 ";
+    grid-template-rows: 250px 250px 250px 250px;
+    grid-template-areas:
+        "img1 img1 img2 img2"
+        "img3 img3 img4 img4"
+        "img5 img5 img6 img6"
+        "img7 img7 img8 img8";
     gap: 10px;
     padding: 30px;
     text-transform: capitalize;
 }
 
 .gal {
-    border-radius: 10px;
+    border-radius: 1px;
 }
 
 .gal:hover {
@@ -442,8 +442,9 @@ main {
     margin: auto;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:"mot1 mot1 mot2 mot2 mot3 mot3"
-                        ". mot4 mot4 mot5 mot5 .";
+    grid-template-areas:
+        "mot1 mot1 mot2 mot2 mot3 mot3"
+        ". mot4 mot4 mot5 mot5 .";
     gap: 10px;
     padding: 30px;
 }
@@ -457,6 +458,7 @@ main {
 
 .mot h3 {
     font-family: var(--font-p);
+    font-size: 20px;
     padding-top: 10px;
     text-align: center;
     padding-bottom: 10px;
@@ -465,6 +467,7 @@ main {
 .mot p {
     font-family: var(--font-p);
     text-align: justify;
+    font-size: 1em;
     padding-bottom: 10px;
 }
 
@@ -487,6 +490,35 @@ main {
 .mot-5 {
     grid-area: mot5;
 }
+
+/***********************************************************/
+/* NOSOTROS */
+/***********************************************************/
+.nos-sobremi h2{
+    text-align: left;
+}
+
+.nosotros h3 {
+    font-family: var(--font-p);
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.nosotros p {
+    font-family: var(--font-p);
+    text-align: justify;
+    font-size: 1em;
+    padding-bottom: 10px;
+}
+
+.nosotros span{
+    font-weight: bold;
+}
+
+/***********************************************************/
+/* FOOTER */
+/***********************************************************/
 
 footer{
     display: block;
@@ -513,22 +545,23 @@ footer a {
 }
 
 /***********************************************************/
-/* RESPONSIVE: TABLET 768 */
+/* RESPONSIVE: TABLET 768 (md)*/
 /***********************************************************/
 
 /* GALERIA */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
     .galeria {
         height: auto;
         display: grid;
         margin: auto;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 180px);
-        grid-template-areas: "img1 img2 img2"
-            "img1 img3 img4"
-            "img5 img3 img7"
-            "img6 img6 img8 ";
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 180px);
+            grid-template-areas:
+                "img1 img2"
+                "img3 img4"
+                "img5 img6"
+                "img7 img8";
         gap: 10px;
         padding: 20px;
         text-transform: capitalize;
@@ -546,80 +579,66 @@ footer a {
         margin: auto;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: "mot1 mot1 mot2 mot2"
+        grid-template-areas:
+            "mot1 mot1 mot2 mot2"
             "mot3 mot3 mot4 mot4"
             ". mot5 mot5 .";
         gap: 10px;
         padding: 30px;
     }
 
-}
-
-/***********************************************************/
-/* RESPONSIVE: TABLET 600 */
-/***********************************************************/
-
-/* GALERIA */
-@media only screen and (max-width: 600px) {
-
-    .galeria {
-        height: auto;
-        display: grid;
-        margin: auto;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 180px);
-        grid-template-areas: "img1 img2"
-            "img3 img4"
-            "img5 img6"
-            "img7 img8 ";
-        gap: 10px;
-        padding: 10px;
-        text-transform: capitalize;
+    .mot h3 {
+        font-family: var(--font-p);
+        font-size: 18px;
+        padding-top: 10px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    
+    .mot p {
+        font-family: var(--font-p);
+        text-align: justify;
+        font-size: .75em;
+        padding-bottom: 10px;
     }
 
     .gal p {
         padding: 2px;
+        font-size: 15px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+    
+    h2{
+        font-size: 25px;
+    }
+
+    footer h6 {
         font-size: 13px;
     }
-
-    .gal:hover {
-        transform: none;
-        box-shadow: none;
+    
+    footer a {
+        font-size: 30px;
+        letter-spacing: 25px;
     }
-
-    .gal:hover p {
-        visibility: visible;
-    }
-
-    .texto{
-        padding-top: 8px;
-        font-size: 33px;
-    }
-
-    /* MOTIVOS */
-    .motivos {
-        height: auto;
-        display: grid;
-        margin: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
-        grid-template-areas:    "mot1"
-                                "mot2"
-                                "mot3"
-                                "mot4"
-                                "mot5";
-        gap: 10px;
-        padding: 30px;
-    }
-
 }
 
 /***********************************************************/
-/* RESPONSIVE: MOBILE 480 */
+/* RESPONSIVE: 576  (sm)*/
 /***********************************************************/
 
 /* GALERIA */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 575px) {
+
+    h1{
+        font-size: 25px;
+    }
+    
+    h2{
+        font-size: 20px;
+    }
 
     .galeria {
         height: auto;
@@ -654,8 +673,26 @@ footer a {
         visibility: visible;
     }
 
+    /* Texto en la arena */
     .texto{
-        font-size: 35px;
+        padding-top: 8px;
+        font-size: 30px;
+    }
+
+    /* MOTIVOS */
+    .motivos {
+        height: auto;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:    "mot1"
+                                "mot2"
+                                "mot3"
+                                "mot4"
+                                "mot5";
+        gap: 10px;
+        padding: 30px;
     }
 
 }
