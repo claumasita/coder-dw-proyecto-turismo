@@ -496,11 +496,10 @@ main {
 /***********************************************************/
 .myCard{
     position: relative;
-    height: 300px;
+    height: 330px;
     display: flex;
     transform-style: preserve-3d;
     transform: perspective(1000px);
-    /* transition: 1s; */
 }
 
 .frente, .dorso{
@@ -515,6 +514,7 @@ main {
 
 .frente img{
     height: 100%;
+    border-radius: 5px;
 }
 
 .frente{
@@ -545,135 +545,9 @@ main {
 .tours p {
     font-family: var(--font-p);
     text-align: justify;
-    font-size: 15px;
+    font-size: 14px;
     padding: 5px;
 }
-
-/* .myCard:hover{
-    transform: translateX(50%);
-} */
-
-/* .myCard .detalles{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.myCard .detalles .contenido{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    transform-origin:center;
-    transform-style: preserve-3d;
-    transition: 1s;
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-}
-
-.myCard .detalles .contenido h3{
-    text-align: center;
-}
-
-.myCard .imgBox{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background: black;
-    transform-origin:center;
-    transform-style: preserve-3d;
-    transition: 1s;
-}
-
-.myCard:hover .imgBox{
-    transform: rotateY(-180deg);
-    background: white;
-    z-index: 0;
-}
-
-.myCard:hover .contenido{
-    transform: rotateY(0deg);
-}
-
-.myCard .imgBox img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-} */
-
-/* *************************************************************** */
-
-/* .middle{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
-  .mycard{
-    cursor: pointer;
-    width: 340px;
-    height: 480px;
-  }
-  .front,.back{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    backface-visibility: hidden;
-    position: absolute;
-    transition: transform .6s linear;
-  }
-  .front img{
-    height: 100%;
-  }
-  .front{
-    transform: perspective(600px) rotateY(0deg);
-  }
-  .back{
-    background: #f1f1f1;
-    transform: perspective(600px) rotateY(180deg);
-  }
-  .back-content{
-    color: #2c3e50;
-    text-align: center;
-    width: 100%;
-  }
-  .sm{
-    margin: 20px 0;
-  }
-  .sm a{
-    display: inline-flex;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    color: #2c3e50;
-    font-size: 18px;
-    transition: 0.4s;
-    border-radius: 50%
-  }
-  .sm a:hover{
-    background: #2c3e50;
-    color: white;
-  }
-  .mycard:hover > .front{
-    transform: perspective(600px) rotateY(-180deg);
-  }
-  .mycard:hover > .back{
-    transform: perspective(600px) rotateY(0deg);
-  } */
 
 /***********************************************************/
 /* NOSOTROS */
@@ -779,13 +653,6 @@ footer a {
         padding-bottom: 10px;
     }
     
-    .mot p {
-        font-family: var(--font-p);
-        text-align: justify;
-        font-size: .75em;
-        padding-bottom: 10px;
-    }
-
     .gal p {
         padding: 2px;
         font-size: 15px;
@@ -799,6 +666,22 @@ footer a {
         font-size: 25px;
     }
 
+    /* H3 */
+    .nosotros h3, .tours h3 {
+        font-size: 18px;
+    }
+    
+    /* PARRAFO */
+    .mot p, .nosotros p, .tours p {
+        font-size: .75em;
+    }
+
+    /* TOURS */
+    .myCard{
+        height: 270px;
+    }
+
+    /* FOOTER */
     footer h6 {
         font-size: 13px;
     }
@@ -879,4 +762,8 @@ footer a {
         padding: 30px;
     }
 
+    /* H3 */
+    .mot h3, .nosotros h3,  .tours h3 {
+        font-size: 15px;
+    }
 }
