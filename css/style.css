@@ -263,31 +263,6 @@ header {
     height: 320px;
 }
 
-/* BARRA DE NAVEGACIÓN */
-/* .nav-bar {
-    position: sticky;
-    top: 0;
-    background-color: #fdf1d7;
-    z-index: 2;
-}
-
-.nav-bar ul {
-    display: flex;
-    justify-content: center;
-}
-
-.nav-bar ul li {
-    list-style: none;
-    text-align: center;
-    display: block;
-}
-
-.nav-bar ul li a {
-    text-decoration: none;
-    padding: 10px;
-    color: black;
-} */
-
 /***********************************************************/
 /* BARRA DE NAV-BOOTSTRAP */
 /***********************************************************/
@@ -550,6 +525,37 @@ main {
 }
 
 /***********************************************************/
+/* TRANSPORTE */
+/***********************************************************/
+.transporte h3 {
+    font-family: var(--font-p);
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.transporte p {
+    font-family: var(--font-p);
+    text-align: justify;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.transporte span{
+    font-weight: bold;
+}
+
+.vehiculos{
+    height: 400px;
+    margin-bottom: 20px;
+    background-image: url(../img/traslados.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+/***********************************************************/
 /* NOSOTROS */
 /***********************************************************/
 .nos-sobremi h2{
@@ -667,18 +673,23 @@ footer a {
     }
 
     /* H3 */
-    .nosotros h3, .tours h3 {
+    .nosotros h3, .tours h3, .transporte h3{
         font-size: 18px;
     }
     
     /* PARRAFO */
-    .mot p, .nosotros p, .tours p {
-        font-size: .75em;
+    .mot p, .nosotros p, .tours p, .transporte p {
+        font-size: .77em;
     }
 
     /* TOURS */
     .myCard{
-        height: 270px;
+        height: 275px;
+    }
+
+    /* TRASLADOS */
+    .vehiculos{
+        height: 300px;
     }
 
     /* FOOTER */
@@ -763,7 +774,13 @@ footer a {
     }
 
     /* H3 */
-    .mot h3, .nosotros h3,  .tours h3 {
+    .mot h3, .nosotros h3,  .tours h3, .transporte h3{
         font-size: 15px;
     }
+
+    /* TRASLADOS */
+    .vehiculos{
+        height: 230px;
+    }
+
 }
