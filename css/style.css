@@ -607,6 +607,50 @@ main {
 }
 
 /***********************************************************/
+/* CONTACTO */
+/***********************************************************/
+.contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myForm {
+    width: 500px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.myForm h3 {
+    font-family: var(--font-p);
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.myForm input::placeholder, .myForm textarea::placeholder {
+    font-family: var(--font-p);
+}
+
+.myForm form .form-group {
+    margin-bottom: 12px;
+}
+
+.myForm form input[type="submit"] {
+    font-size: 18px;
+    margin-top: 15px;
+    font-family: var(--font-p);
+}
+
+.myForm textarea{
+    width: 100%;
+    resize: none;
+    height: 250px;
+    border-radius: 12px;
+}
+
+/***********************************************************/
 /* FOOTER */
 /***********************************************************/
 
@@ -699,7 +743,7 @@ footer a {
     }
 
     /* H3 */
-    .nosotros h3, .tours h3, .transporte h3{
+    .nosotros h3, .tours h3, .transporte h3, .contacto h3{
         font-size: 18px;
     }
     
@@ -716,6 +760,15 @@ footer a {
     /* TRASLADOS */
     .vehiculos{
         height: 300px;
+    }
+
+    /* CONTACTO */
+    .myForm input::placeholder, .myForm textarea::placeholder{
+        font-size: 15px;
+    }
+
+    .myForm form input[type="submit"] {
+        font-size: 15px;
     }
 
     /* FOOTER */
