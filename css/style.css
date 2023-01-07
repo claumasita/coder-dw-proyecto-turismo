@@ -3,11 +3,8 @@
 
 /* FONT FAMILIES
 font-family: 'Alegreya Sans SC', sans-serif;
-font-family: 'Baloo 2', cursive;
 font-family: 'Comfortaa', cursive;
-font-family: 'Josefin Sans', sans-serif;
 font-family: 'Rubik Vinyl', cursive;
-font-family: 'Unbounded', cursive;
 */
 
 /* CONSTANTES */
@@ -676,6 +673,10 @@ footer a {
 
 .foot{
     padding-top: 10px;
+}
+
+.redes{
+    padding-inline-start: 30px;
 }
 
 /***********************************************************/
