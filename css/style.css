@@ -286,6 +286,8 @@ header {
 .navbar-toggler{
     margin: 0 auto;
     border: none;
+    /* border: solid 1px darkgray; */
+    box-shadow: 3px 3px 15px #ecc075;
 }
 
 /* MENU CENTRADO (desplegado) */
