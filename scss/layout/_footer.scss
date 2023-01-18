@@ -1,0 +1,30 @@
+/***********************************************************/
+/* FOOTER */
+/***********************************************************/
+footer{
+    display: block;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background-color: map-get($colors, "arena" );
+    padding-bottom: 10px;
+
+    a{
+        color: black;
+        font-size: 40px;
+        letter-spacing: 30px;
+    }
+
+    h6{
+        font-size: 15px;
+        font-family: $font-p;
+    }
+
+    .foot{
+        padding-top: 10px;
+    }
+
+    .redes{
+        padding-inline-start: 29px;
+    }
+}

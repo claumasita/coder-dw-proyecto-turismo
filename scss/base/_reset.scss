@@ -1,0 +1,31 @@
+/* SETEOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    padding-top: 10px;
+    font-family: $font-h;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+h2{
+    text-align: center;
+    padding-top: 10px;
+    font-family: $font-h;
+    font-size: 30px;
+}
+
+h3{
+    font-family: $font-p;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+p{
+    font-family: $font-p;
+}

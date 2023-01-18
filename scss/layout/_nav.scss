@@ -1,0 +1,50 @@
+/***********************************************************/
+/* BARRA DE NAV-BOOTSTRAP */
+/***********************************************************/
+.navbar {
+    background-color: #fdf1d7;
+}
+
+.nav-item{
+    list-style: none;
+    font-family: $font-p;
+    padding-top: 7px;
+}
+
+.nav-link{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.active{
+    font-weight: bold;
+}
+
+/* MENU CENTRADO */
+.navbar-toggler{
+    margin: 0 auto;
+    border: none;
+    box-shadow: 3px 3px 15px #ecc075;
+}
+
+/* MENU CENTRADO (desplegado) */
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+/* REEMPLAZA ICONO DEL MENU */
+.navbar-toggler-icon {
+    background-image: url(../img/logo-small.png)!important;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    transition: all 0.50s ease-out;
+    transform-origin: center;
+}
+
+.navbar-toggler:not(.collapsed) 
+.navbar-toggler-icon 
+{
+    transform: rotateY(180deg);
+}

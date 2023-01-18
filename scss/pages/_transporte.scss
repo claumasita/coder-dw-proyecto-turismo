@@ -1,0 +1,33 @@
+/******************/
+/*   TRANSPORTE   */
+/******************/
+
+.transporte{
+    .vehiculos{
+        height: 400px;
+        margin-bottom: 20px;
+        background-image: url(../img/traslados.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px;
+    }
+
+    h3{
+        font-family: $font-p;
+        font-size: 20px;
+        padding-top: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    p{
+        text-align: justify;
+        font-size: 14px;
+        padding: 5px;
+    }
+    
+    span{
+        font-weight: bold;
+    }
+
+}

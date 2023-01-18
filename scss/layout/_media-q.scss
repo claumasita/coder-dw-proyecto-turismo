@@ -1,0 +1,240 @@
+/***********************************************************/
+/* RESPONSIVE: TABLET 768 (md)*/
+/***********************************************************/
+@media only screen and (max-width: 767px) {
+
+    /* GENERALES */
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    /******************/
+    /*      HOME      */
+    /******************/
+    .galeria {
+        height: auto;
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 180px);
+        grid-template-areas:
+            "img1 img2"
+            "img3 img4"
+            "img5 img6"
+            "img7 img8";
+        gap: 10px;
+        padding: 20px;
+        text-transform: capitalize;
+    
+        .gal p {
+            padding: 2px;
+            font-size: 15px;
+        }
+    }
+
+    /* MOTIVOS */
+    .motivos {
+        height: auto;
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "mot1 mot1 mot2 mot2"
+            "mot3 mot3 mot4 mot4"
+            ". mot5 mot5 .";
+        gap: 10px;
+        padding: 30px;
+
+        .mot p {
+            font-size: $font-size-p-md;
+        }
+    }
+
+    /******************/
+    /*  EXCURSIONES   */
+    /******************/
+    .tours {
+        .myCard {
+            height: 275px;
+        }
+
+        h3{
+            font-size: $font-size-h3-md;
+        }
+
+        p {
+            font-size: $font-size-p-md;
+        }
+    }
+
+    /******************/
+    /*    NOSOTROS    */
+    /******************/
+
+    .nosotros{
+        h3{
+            font-size: $font-size-h3-md;
+        }
+
+        p {
+            font-size: $font-size-p-md;
+        }
+    }
+
+    /******************/
+    /*   TRANSPORTE   */
+    /******************/
+    .transporte {
+        h3{
+            font-size: $font-size-h3-md;
+        }
+
+        p {
+            font-size: $font-size-p-md;
+        }
+
+        .vehiculos {
+            height: 300px;
+        }
+    }
+
+    /******************/
+    /*    CONTACTO    */
+    /******************/
+    .contacto {
+        .myForm {
+            input::placeholder {
+                font-size: 15px;
+            }
+
+            textarea::placeholder {
+                font-size: 15px;
+            }
+
+            h3{
+                font-size: $font-size-h3-md;
+            }
+
+            form {
+                input[type="submit"] {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    /******************/
+    /*     FOOTER     */
+    /******************/
+    footer {
+        h6 {
+            font-size: 13px;
+        }
+
+        a {
+            font-size: 30px;
+            letter-spacing: 25px;
+        }
+    }
+}
+
+/***********************************************************/
+/* RESPONSIVE: 576  (sm)*/
+/***********************************************************/
+@media only screen and (max-width: 575px){
+
+    /* GENERALES */
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    /******************/
+    /*     BANNER     */
+    /******************/
+    .texto{
+        p{
+            padding-top: 8px;
+            font-size: 30px;
+        }
+    }
+
+    /******************/
+    /*      HOME      */
+    /******************/
+    .galeria {
+        height: auto;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 200px);
+        grid-template-areas: "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7"
+            "img8 ";
+        gap: 10px;
+        padding: 10px;
+        text-transform: capitalize;
+
+        .gal{
+            p{
+                padding: 2px;
+                font-size: 13px;
+            }
+
+            &:hover{
+                transform: none;
+                box-shadow: none;
+
+                p{
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    /* MOTIVOS */
+    .motivos {
+        height: auto;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:    "mot1"
+                                "mot2"
+                                "mot3"
+                                "mot4"
+                                "mot5";
+        gap: 10px;
+        padding: 30px;
+
+        .mot{
+            h3{
+                font-size: $font-size-h3-sm;
+            }
+        }
+
+    }
+
+    /******************/
+    /*   TRANSPORTE   */
+    /******************/
+    .transporte {
+        .vehiculos {
+            height: 230px;
+        }
+    }
+
+}

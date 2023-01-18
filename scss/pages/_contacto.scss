@@ -1,0 +1,52 @@
+/******************/
+/*    CONTACTO    */
+/******************/
+
+.contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .myForm {
+        width: 500px;
+        height: min-content;
+        padding: 20px;
+        border-radius: 12px;
+
+        h3{
+            font-family: $font-p;
+            font-size: 20px;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+
+        input::placeholder{
+            font-family: $font-p;
+        }
+
+        textarea{
+            width: 100%;
+            resize: none;
+            height: 250px;
+            border-radius: 12px;
+
+            &::placeholder{
+                font-family: $font-p;
+            }
+        }
+
+        form{
+            .form-group {
+                margin-bottom: 12px;
+            }
+
+            input[type="submit"] {
+                font-size: 18px;
+                margin-top: 15px;
+                font-family: $font-p;
+            }
+        }
+
+    }
+
+}

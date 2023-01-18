@@ -1,0 +1,55 @@
+/******************/
+/*  EXCURSIONES   */
+/******************/
+
+.tours{
+    h3{
+        font-weight: bold;
+        text-align: center;
+    }
+
+    p{
+        text-align: justify;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .myCard{
+        position: relative;
+        height: 330px;
+        display: flex;
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+
+        &:hover > .frente{
+            transform: perspective(2500px) rotateY(-180deg);
+        }
+
+        &:hover > .dorso{
+            transform: perspective(2500px) rotateY(0deg);
+        }
+
+        .frente{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            backface-visibility: hidden;
+            position: absolute;
+            transition: transform .7s linear;
+            border-radius: 5px;
+            transform: perspective(2500px) rotateY(0deg);
+
+            img{
+                height: 100%;
+                border-radius: 5px;
+            }
+        }
+
+        .dorso{
+            @extend .frente;
+            transform: perspective(2500px) rotateY(180deg);
+            background: rgb(236, 235, 235);
+        }
+    }
+
+}
