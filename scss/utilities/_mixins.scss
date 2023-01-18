@@ -1,0 +1,12 @@
+@mixin style-p( $t-aling , $f-size , $p-bottom ){
+    text-align: $t-aling;
+    font-size: $f-size;
+    padding-bottom: $p-bottom;
+}
+
+@mixin h3-default{
+    font-family: $font-p;
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}

@@ -4,16 +4,11 @@
 
 .nosotros{
     h3{
-        font-family: $font-p;
-        font-size: 20px;
-        padding-top: 10px;
-        font-weight: bold;
+        @include h3-default;
     }
     
     p{
-        text-align: justify;
-        font-size: 1em;
-        padding-bottom: 10px;
+        @include style-p( justify , 1em, 10px );
     }
     
     span{

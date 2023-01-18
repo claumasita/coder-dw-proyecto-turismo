@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/claumasita/dw-preentrega2-masa.git"
+    "url": "git+https://github.com/claumasita/dw-preentrega3-masa.git"
   },
   "author": "Claudio Masa",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/claumasita/dw-preentrega2-masa/issues"
+    "url": "https://github.com/claumasita/dw-preentrega3-masa/issues"
   },
-  "homepage": "https://github.com/claumasita/dw-preentrega2-masa#readme",
+  "homepage": "https://github.com/claumasita/dw-preentrega3-masa#readme",
   "devDependencies": {
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.20"
