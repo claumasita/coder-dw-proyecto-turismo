@@ -1,3 +1,5 @@
+<p align="center"> <img src="https://anittaexcursiones.000webhostapp.com/img/logo-small.png" alt="Logo Anitta Excursiones" width="250px"></p>
+
 # Anitta Excursiones
 > Empresa ficticia dedicada al Turismo en Santo Domingo y Punta Cana (República Dominicana).
 
