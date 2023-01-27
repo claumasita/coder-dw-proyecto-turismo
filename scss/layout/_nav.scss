@@ -2,7 +2,12 @@
 /* BARRA DE NAV-BOOTSTRAP */
 /***********************************************************/
 .navbar {
-    background-color: #fdf1d7;
+    background-color: map-get($colors, "arena" );
+
+    /* MENU CENTRADO (desplegado) */
+    .navbar-collapse {
+        text-align: center;
+    }
 }
 
 .nav-item{
@@ -24,23 +29,85 @@
 .navbar-toggler{
     margin: 0 auto;
     border: none;
-    box-shadow: 3px 3px 15px #ecc075;
+    -webkit-animation: jello-horizontal 1s both;
+    animation: jello-horizontal 1s both;
 }
 
-/* MENU CENTRADO (desplegado) */
-.navbar .navbar-collapse {
-    text-align: center;
+// ANIMACION: Boton de Menú "JELLO"
+@-webkit-keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+                transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+                transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+                transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+                transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+                transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+                transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+                transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+                transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+                transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+                transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+    }
 }
 
 /* REEMPLAZA ICONO DEL MENU */
 .navbar-toggler-icon {
-    background-image: url(../img/logo-small.png)!important;
+    background-color: map-get($colors, "arena-text" );
+    background-image: url(../img/logo-menu.png)!important;
     background-size: cover;
     height: 50px;
     width: 50px;
     position: relative;
     transition: all 0.50s ease-out;
     transform-origin: center;
+    border-radius: 50%;
+    box-shadow: map-get($colors, "arena-text" ) 0px 3px 5px 3px;
 }
 
 .navbar-toggler:not(.collapsed) 
